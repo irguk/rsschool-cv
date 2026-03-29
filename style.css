@@ -85,10 +85,3 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Адаптив для телефонов */
-@media (max-width: 600px) {
-    .contact-bar {
-        flex-direction: column;
-        gap: 5px;
-    }
-}
