@@ -1,0 +1,94 @@
+/* Общие настройки страницы */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+/* Шапка с контактами */
+header {
+    text-align: center;
+    border-bottom: 3px solid #2c3e50;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+
+.job-title {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    font-weight: bold;
+}
+
+.contact-bar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.contact-bar a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Заголовки секций */
+h2 {
+    color: #2c3e50;
+    border-left: 5px solid #3498db;
+    padding-left: 10px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+/* Список навыков */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-container li {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Оформление кода */
+pre {
+    background: #282c34;
+    color: #abb2bf;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+}
+
+/* Ссылки */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптив для телефонов */
+@media (max-width: 600px) {
+    .contact-bar {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
